@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mini calculatrice</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function add(){
+	var x=document.getElementById("nbr1").value;
+	var y=document.getElementById("nbr2").value;
+	
+	document.getElementById("resultat").value=parseFloat(x)+parseFloat(y);	
+
+}
+function moins(){
+	var x=document.getElementById("nbr1").value;
+	var y=document.getElementById("nbr2").value;
+	
+	document.getElementById("resultat").value=parseFloat(x)-parseFloat(y);		
+}
+function puissance(){
+	var x=document.getElementById("nbr1").value;
+	var y=document.getElementById("nbr2").value;
+	
+	document.getElementById("resultat").value= Math.pow(parseFloat(x),parseInt(y));	
+}
+
+function lemax(){
+	var x=document.getElementById("nbr1").value;
+	var y=document.getElementById("nbr2").value;
+
+	document.getElementById("resultat").value= Math.max(parseFloat(x),parseInt(y));	
+}
+function lemin(){
+	var x=document.getElementById("nbr1").value;
+	var y=document.getElementById("nbr2").value;
+
+	document.getElementById("resultat").value= Math.min(parseFloat(x),parseInt(y));	
+}
+</script>
+nombre1<input type="text" id="nbr1"><br>
+nombre2<input type="text" id="nbr2"><br>
+<input type="button" value="Somme" onClick="add()">
+&nbsp;<input type="button" value="soustraction" onClick="moins()">
+&nbsp;<input type="button" value="puissance" onClick="puissance()">
+&nbsp;<input type="button" value="min" onClick="lemin()">
+&nbsp;<input type="button" value="max" onClick="lemax()"><br>
+résultat<input type="text" id="resultat"><br>
+</body>
+</html>

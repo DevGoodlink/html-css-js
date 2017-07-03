@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+
+</head>
+
+<body>
+<select id="jour">
+	<!--option id="j1" value="Lundi">Lundi</option-->
+</select>
+<select id="langue" onChange="changerLangue()">
+	<option id="l1" value="french">Français</option>
+	<option id="l1" value="anglais">Anglais</option>
+</select>
+
+<script type="text/javascript">
+var champJours = document.getElementById("jour");
+var champLangue=document.getElementById("langue");
+var tabJourFrancais=["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
+var tabJourAnglais=["Monday","Thusday","Wednsday","Thursday","Friday","Saturday","Sanday"];
+function changerLangue(){
+	for(var i=0;i<=champJours.length;i++){
+		champJours.remove(i);
+	}
+	if (champLangue.value=="french"){
+ 		for (var i=0;i<7;i++){
+			var option = document.createElement("option");
+			option.text=tabJourFrancais[i];
+			champJours.add(option);//option);
+			}
+ 	}
+	if (champLangue.value=="anglais"){
+ 		for (var i=0;i<7;i++){
+			var option = document.createElement("option");
+			option.text=tabJourAnglais[i];
+			champJours.add(option);//option);
+			}
+ 	}
+}
+
+
+</script>
+</body>
+</html>

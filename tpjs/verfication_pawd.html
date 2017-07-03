@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function check(){
+var pass = document.getElementById("txtpwd").value;
+if(pass.length<6) {
+		alert(pass.length);
+		alert("nombre de caractère dans le mot de passe inférieur à 6");
+}//"nombre de caractère dans le mot de passe inférieur à 6");
+}
+
+</script>
+Mot de passe<input type="password" id="txtpwd"><p style="color:blue">Minimum 6 caractère</p><br>
+<input type="submit" onClick="check()">
+</body>
+</html>

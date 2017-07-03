@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulaire d'inscription en mode création</title>
+<link href="css/style.css"  rel="stylesheet"/>
+</head>
+
+<body>
+<h1>Formulaire d'inscription</h1>
+<form method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <fieldset>
+    <legend>Vos coordonnées</legend>
+    <p>
+      <label for="textfield">Nom:</label>
+      <input name="textfield" type="text" autofocus id="textfield" placeholder="Votre nom">
+    </p>
+    <p>
+      <label for="textfield2">Prénom:</label>
+      <input name="textfield2" type="text" id="textfield2" placeholder="Votre prénom">
+    </p>
+    <p>
+      <label for="date">Date:</label>
+      <input name="date" type="date" id="date" value="1995-01-01">
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input name="email" type="email" id="email" placeholder="Votre email">
+    </p>
+    <p>
+      <label for="url">Url:</label>
+      <input name="url" type="url" id="url" placeholder="http:\\www.">
+    </p>
+    <p>
+      <label for="textfield3">Code:</label>
+      <input name="textfield3" type="text" id="textfield3" placeholder="Votre Code">
+    </p>
+    <p>
+      <label>
+        <input type="radio" name="Sexe" value="male" id="Sexe_0">
+        Homme</label>
+      <br>
+      <label>
+        <input type="radio" name="Sexe" value="female" id="Sexe_1">
+        Femme</label>
+      <br>
+      <select name="select" id="select">
+        <option>Votre Pays</option>
+        <optgroup label="Amerique"></optgroup>
+        <option>USA<i>Texas</i></option>
+        <option>Canada</option>
+        <option>Argentine</option>
+        <optgroup label="Europe"></optgroup>
+        <option>France</option>
+        <option>Turkie</option>
+        <option>Espagne</option>
+        <optgroup label="Afrique"></optgroup>
+        <option>Maroc<i>Casablanca</i></option>
+        <option>Ghana</option>
+      </select>
+    </p>
+  
+  </fieldset>
+    <fieldset>
+      <legend>Vos loisirs</legend>
+      <p>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">Voyage </label>
+      </p>
+      <p>
+        <input type="checkbox" name="checkbox2" id="checkbox2">
+        <label for="checkbox2">Lecture</label></p>
+      <p>
+        <input type="checkbox" name="checkbox3" id="checkbox3">
+        <label for="checkbox3">Sport </label>
+      </p>
+      <p>
+        <textarea name="textarea" id="textarea" placeholder="Décrivez vos loisirs en détail" title="Décrivez vos loisirs en détail"></textarea>
+      </p>
+    </fieldset>
+  <fieldset>
+    <legend>Votre Photo
+    </legend><p>
+      <label for="fileField">Sélectionner votre image:</label>
+      <input type="file" name="fileField" id="fileField">
+    </p>
+    <p>
+      <input type="reset" name="reset" id="reset" value="Réinitialiser">
+      <input type="submit" name="submit" id="submit" value="Envoyer">
+    </p>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tp JavaScript</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function majuscule(){
+	
+	var chaine=document.getElementById("nom").value;
+	document.getElementById("nom").value=chaine.toUpperCase();
+	
+}
+</script>
+<p>Nom&nbsp;:&nbsp;<input type="text" id="nom" placeholder="Entrer le nom" onBlur="majuscule()"><br>
+Prénom&nbsp;:&nbsp;<input type="text" id="prenom" placeholder="Entre le prénom"><br></p>
+</body>
+</html>

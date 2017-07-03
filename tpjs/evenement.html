@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+<script language="javascript">
+function bienvenue(){
+	var h= screen.height;
+	var l=screen.width;
+	alert("Bienvenue sur cette page, la largeur de votre écran est : " + l + " et la hauteur est de : " + h);
+}
+function au_revoir(){
+	alert("merci de votre visite");	
+}
+function quitter(){
+	alert("le champs nom a le focus");
+}
+function activer(){
+	alert("le champs nom a le focus");
+}
+
+</script>
+</head>
+
+<body onLoad="bienvenue()" onUnload="au_revoir()">
+Nom:<input type="text" name="txtnom" onFocus="activer()"><br>
+Prénom :<input type="text" name="txtprenom" onFocus="activer()"><br>
+Adresse :<input type="text" name="txtadresse" onBlur="quitter()"
+Page html pour gérer les événement on load et on unload.
+03/12/2015
+</body>
+</html>

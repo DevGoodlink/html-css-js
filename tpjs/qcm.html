@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>qcm</title>
+<style type="text/css">
+.formulaire{
+	background:#0CD5F5;
+	border-color:#410203;
+	border-radius:10px;
+	cellspacing:0; 
+	cellpadding:0;
+	width:100%;
+}
+.correct{
+	background:#2AD40F;
+}
+
+.incorrect{
+	text-decoration:line-through;
+}
+
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+function corriger(){
+	if (document.getElementById("r2").checked){
+		 //document.getElementById("lbl2").style.color="green";
+		 //document.getElementById("lbl3").style.textDecoration="";
+		 document.getElementById("lbl2").className="correct";
+		 document.getElementById("lbl1").className="incorrect";
+		 document.getElementById("lbl3").className="incorrect";
+		 alert("Bonne réponse");
+	}
+	else alert("incorrect essayer encore une fois");
+	}
+</script>
+<form class="formulaire">
+    <input type="radio" id="r1" name="radio" value="Le champ texte reçoit le focus">
+    <label for="r1" id="lbl1">Le champ texte reçoit le focus</label><br>
+    
+    <input type="radio" id="r2" name="radio" value="Le champ texte perd le focus">
+    <label for="r2" id="lbl2" >Le champ texte perd le focus</label><br>
+    
+    <input type="radio" id="r3" name="radio" value="La souris survolle le champ text">
+    <label for="r3" id="lbl3">La souris survolle le champ text</label><br>
+    <input type="button" id="b1" onClick="corriger()" value="Corrigez">
+</form>
+</body>
+</html>

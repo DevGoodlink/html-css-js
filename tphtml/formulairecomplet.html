@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulaire complet</title>
+</head>
+
+<body>
+<h1>Formulaire d'inscription</h1>
+<form id="frm1">
+    <fieldset><legend>Vos coordonées</legend>
+        <Label id="lblnom">Nom</Label><input type="text" placeholder="Votre nom" autocomplete="on"><br>
+        <Label id="lblprenom">Nom</Label><input type="text" placeholder="Votre prénom"><br>
+        <Label id="lbldn">Date de naissance</Label><input type="date" max="01/01/1995"><br>
+        <Label id="lble-mail">Votre Email</Label><input type="text" placeholder="Votre Email"><br>
+        <Label id="lblsite">site de votre institution</Label><input type="url" placeholder="http://www."><br>
+        <Label id="lblcode">Code</Label><input type="text" placeholder="Votre code"><br>
+        <p>
+          <label>
+            <input type="radio" name="RadioGroup1" value="male" id="RG1">Homme</label>
+          <br>
+          <label>
+            <input type="radio" name="RadioGroup1" value="female" id="RG1">Femme</label>
+          <br>
+        </p>
+        <select name="pays">
+        	<option value="null">Votre pays</option>
+            <optgroup label="Amerique">
+            <option id=1>USA</option>
+            <option id=2>Canada</option>
+            <option id=3>Mexique</option>
+            </optgroup>
+            <optgroup label="Europe">
+            <option id=4>France</option>
+            <option id=5>Espagne</option>
+            <option id=6>Portugal</option>
+            </optgroup>
+            <optgroup label="Afrique">
+            <option id=7>Maroc</option>
+            <option id=8>Algerie</option>
+            <option id=9>Tunisie</option>
+            </optgroup>
+        </select>
+    </fieldset>
+</form>
+
+</body>
+</html>
